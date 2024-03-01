@@ -1,0 +1,21 @@
+{
+  "name": "@core/routes",
+  "version": "0.0.0",
+  "main": "./index.js",
+  "type": "module",
+  "private": true,
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "lint": "eslint \"src/**/*.js*\" --fix",
+    "clean": " rm -rf node_modules && rm -rf dist"
+  },
+  "devDependencies": {
+    "eslint-config-custom": "*"
+  },
+  "peerDependencies": {
+    "react-router-dom": "^6.3.0"
+  }
+}

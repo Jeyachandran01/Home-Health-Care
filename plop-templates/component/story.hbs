@@ -1,0 +1,18 @@
+import * as React from 'react';
+import { {{pascalCase name}} } from './index';
+
+export default {
+  title: '{{type}}/{{pascalCase name}}',
+  component: {{pascalCase name}},
+};
+
+function Template(args) {
+  return React.createElement({{pascalCase name}}, { ...args });
+}
+
+export const Default = Template.bind({});
+Default.args = {
+  children: '{{pascalCase name}}',
+};
+
+Default.argTypes = {};

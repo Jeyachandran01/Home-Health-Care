@@ -1,0 +1,43 @@
+{
+  "name": "react-vite-web",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host --open",
+    "build": "vite build",
+    "preview": "vite preview --host --open"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
+    "zustand": "^4.1.4",
+    "react-hot-toast": "^2.4.0",
+    "react-router-dom": "^6.3.0",
+    "ahooks": "^3.7.0",
+    "prop-types": "^15.8.1",
+    "@fontsource/poppins": "^4.5.10",
+    "@tanstack/react-query": "^4.13.0",
+    "@tanstack/react-query-devtools": "^4.13.5",
+    "@mui/lab": "^5.0.0-alpha.104",
+    "@mui/material": "^5.10.12",
+    "@mui/x-data-grid": "^5.17.14",
+    "axios": "^1.1.3",
+    "react-icons": "^4.6.0",
+    "@core/ui": "*",
+    "@core/alias": "*",
+    "@core/theme": "*",
+    "@core/utils": "*",
+    "@core/logger": "*",
+    "@core/store": "*",
+    "@core/routes": "*"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react-swc": "^3.0.1",
+    "@types/react": "^18.0.24",
+    "@types/react-dom": "^18.0.8",
+    "vite": "^3.2.3"
+  }
+}

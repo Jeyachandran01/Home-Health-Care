@@ -1,0 +1,24 @@
+{
+  "name": "@core/utils",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "main": "./index.js",
+  "files": [
+    "dist/**"
+  ],
+  "scripts": {
+    "lint": "eslint \"src/**/*.js*\" --fix",
+    "clean": " rm -rf node_modules && rm -rf dist"
+  },
+  "peerDependencies": {
+    "@tanstack/react-query": "^4.13.0",
+    "axios": "^1.1.3",
+    "@core/config": "*"
+  },
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "eslint-config-custom": "*",
+    "vite": "^3.2.3"
+  }
+}

@@ -1,0 +1,29 @@
+import { Box, Typography } from '@mui/material';
+import { {{camelCase name}}_style } from './style';
+import PropTypes from 'prop-types';
+
+function {{pascalCase name}}(props) {
+  const { className = '', rootStyle = {}, ...rest } = props;
+
+  return (
+    <Box
+      sx={
+      {
+        ...{{camelCase name}}_style.rootSx,
+        ...rootStyle,
+      }
+      }
+      className={`${className}`}
+      {...rest}
+    >
+      <Typography>{{pascalCase name}} component</Typography>
+    </Box>
+  );
+}
+
+{{pascalCase name}}.propTypes = {
+  className: PropTypes.string,
+  rootStyle: PropTypes.object,
+};
+
+export { {{pascalCase name}} };

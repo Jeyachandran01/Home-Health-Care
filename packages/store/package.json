@@ -1,0 +1,25 @@
+{
+  "name": "@core/store",
+  "version": "0.0.0",
+  "description": "Global Stores",
+  "license": "MIT",
+  "type": "module",
+  "main": "./index.js",
+  "sideEffects": false,
+  "scripts": {
+    "lint": "eslint \"src/**/*.js*\" --fix",
+    "clean": " rm -rf node_modules && rm -rf dist"
+  },
+  "devDependencies": {
+    "eslint-config-custom": "*"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-hot-toast": "^2.4.0",
+    "react-router-dom": "^6.3.0",
+    "zustand": "^4.1.4",
+    "@core/utils": "*",
+    "@core/logger": "*"
+  }
+}

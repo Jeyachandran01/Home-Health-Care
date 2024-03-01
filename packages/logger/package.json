@@ -1,0 +1,17 @@
+{
+  "name": "@core/logger",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "main": "./index.js",
+  "files": [
+    "dist/**"
+  ],
+  "scripts": {
+    "lint": "eslint \"src/**/*.js*\" --fix",
+    "clean": " rm -rf node_modules && rm -rf dist"
+  },
+  "devDependencies": {
+    "eslint-config-custom": "*"
+  }
+}
