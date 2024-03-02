@@ -1,7 +1,6 @@
-import CrayondLogo from '@assets/crayondLogo.png';
 import { useOnboarding } from '@core/store';
 import { Button, Input, Label } from '@core/ui/atoms';
-import { Avatar, Box, IconButton, Typography } from '@mui/material';
+import { Box, IconButton, Typography } from '@mui/material';
 import React, { useState } from 'react';
 import { MdVisibility, MdVisibilityOff } from 'react-icons/md';
 
@@ -31,8 +30,10 @@ function Login(props) {
       {...rest}
     >
       <Box sx={login_style.cardContentSx}>
-        <Avatar src={CrayondLogo} sx={{ width: 44, height: 44, ml: -1 }} />
-        <Typography sx={login_style.createPasswordSx}>Welcome</Typography>
+        {/* <Avatar src={CrayondLogo} sx={{ width: 44, height: 44, ml: -1 }} /> */}
+        <Typography sx={login_style.createPasswordSx}>
+          Welcome To HHC 🛠️
+        </Typography>
         <Box>
           <Label htmlFor="username">Username</Label>
           <Input

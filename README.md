@@ -1,22 +1,14 @@
-# Turbo-monorepo-boilerplate (JS)
-
-This project was bootstrapped with [https://turbo.build/repo](Turborepo)
-
-## What's inside?
-
-This Turborepo includes the following apps/packages:
+# Home-Health-Care (JS)
 
 ### Apps and Packages
 
 - `apps/react-vite-web`: A [ReactJS](https://reactjs.org/) App bootstrapped with [vite](https://vitejs.dev/)
 
-
 - `packages/alias`: To use absolute paths for importing in `packages/ui` instead of relatively referring a path. Can also alias for other packages.
 - `packages/config`: To add configuration files like `env` to share across the app
 - `eslint-config-custom`: `eslint` configurations to share across apps and packages
-- `packages/logger`:  isomorphic logger (a small wrapper around console.log)
+- `packages/logger`: isomorphic logger (a small wrapper around console.log)
 - `packages/ui`: A React component library (atoms, components) shared to apps
-
 
 ### Utilities
 
@@ -40,7 +32,6 @@ To build all apps and packages, run the following command:
 ```
 npm run build
 ```
-
 
 ### Remote Caching
 
