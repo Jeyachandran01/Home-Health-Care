@@ -10,7 +10,7 @@ export const organizationlayout_style = {
     // p:3
   },
   bodySx: {
-    display: 'grid',
+    display: 'flex',
     overflow: 'hidden',
     gridTemplateColumns: '230px 1fr',
     height: '90vh',

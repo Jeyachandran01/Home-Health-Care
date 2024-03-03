@@ -61,38 +61,40 @@ export function SideBar(props) {
               <Box sx={sidebar_style.iconSx}>{val?.icon}</Box>
               <Typography sx={sidebar_style.menuSx}>{val?.navItem}</Typography>
             </ListItemButton>
-            {showLogout && (
-              <ListItemButton
-                onClick={() => logOut()}
-                selected={val?.path === window.location.pathname}
-                sx={{
-                  ...sidebar_style.ListItemButtonSx,
-                  mt: 2,
-                  '&.Mui-selected': {
-                    backgroundColor: '#EEEEEE',
-                    '&:hover': {
-                      backgroundColor: '#EEEEEE',
-                    },
-                  },
-                  '&.Mui-focusVisible': {
-                    backgroundColor: '#EEEEEE',
-                  },
+          </List>
+        ))}
+
+        <List>
+          {showLogout && (
+            <ListItemButton
+              onClick={() => logOut()}
+              sx={{
+                ...sidebar_style.ListItemButtonSx,
+                mt: 2,
+                '&.Mui-selected': {
+                  backgroundColor: '#EEEEEE',
                   '&:hover': {
                     backgroundColor: '#EEEEEE',
                   },
-                  '& .MuiButtonBase-root-MuiListItemButton-root.Mui-selected': {
-                    backgroundColor: '#EEEEEE',
-                  },
-                }}
-              >
-                <Box sx={sidebar_style.iconSx}>
-                  <RiLogoutCircleRLine size="20px" />
-                </Box>
-                <Typography sx={sidebar_style.menuSx}>Logout</Typography>
-              </ListItemButton>
-            )}
-          </List>
-        ))}
+                },
+                '&.Mui-focusVisible': {
+                  backgroundColor: '#EEEEEE',
+                },
+                '&:hover': {
+                  backgroundColor: '#EEEEEE',
+                },
+                '& .MuiButtonBase-root-MuiListItemButton-root.Mui-selected': {
+                  backgroundColor: '#EEEEEE',
+                },
+              }}
+            >
+              <Box sx={sidebar_style.iconSx}>
+                <RiLogoutCircleRLine size="20px" />
+              </Box>
+              <Typography sx={sidebar_style.menuSx}>Logout</Typography>
+            </ListItemButton>
+          )}
+        </List>
       </Box>
     </Paper>
   );

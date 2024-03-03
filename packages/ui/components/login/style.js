@@ -1,9 +1,10 @@
 export const login_style = {
   rootSx: {
     display: 'flex',
-    justifyContent: 'center',
+    justifyContent: 'start',
     alignItems: 'center',
     height: '100%',
+    ml: '10%',
   },
   cardContentSx: {
     backgroundColor: '#FFFFFF',

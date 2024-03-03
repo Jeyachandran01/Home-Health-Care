@@ -5,10 +5,10 @@ export const lightTheme = {
       white: '#fff',
     },
     primary: {
-      light: '#6EBDAB',
-      main: '#007965',
-      dark: '#239179',
-      lighter: '#E2F7F4',
+      light: '#5379d8',
+      main: '#1d48b3 ',
+      dark: '#0c2e83',
+      lighter: '#8ba6ea',
       contrastText: '#fff',
     },
     secondary: {
