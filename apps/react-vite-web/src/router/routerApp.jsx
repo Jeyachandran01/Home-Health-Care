@@ -5,6 +5,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import { appRoutes } from '@core/routes';
 import { ErrorBoundary } from '../pages/errorBoundary';
 import { PrivateRouter } from './privateRouter';
+import Services from '../pages/services';
 
 // const pathSlicer = (path, sliceStart = 1) => path.slice(sliceStart);
 
@@ -27,6 +28,23 @@ const router = createBrowserRouter([
     ],
   },
   {
+    path: appRoutes?.services,
+    element: <RootLayout />,
+    errorElement: <ErrorBoundary />,
+    children: [
+      {
+        index: true,
+        element: (
+          <PrivateRouter>
+            <Layout>
+              <Services />,
+            </Layout>
+          </PrivateRouter>
+        ),
+      },
+    ],
+  },
+  {
     path: appRoutes?.login,
     errorElement: <ErrorBoundary />,
     element: <RootLayout />,
@@ -37,6 +55,7 @@ const router = createBrowserRouter([
       },
     ],
   },
+
   {
     path: '*',
     errorElement: <ErrorBoundary />,

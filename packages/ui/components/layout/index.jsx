@@ -1,9 +1,10 @@
 /* eslint-disable camelcase */
-import { AppBar, DashboardIcon, SideBar } from '@atoms';
+import { AppBar, DashboardIcon } from '@atoms';
 import { Box, useMediaQuery, useTheme } from '@mui/material';
 import PropTypes from 'prop-types';
 import { useState } from 'react';
 
+import { NotificationIcon } from '../../atoms';
 import { organizationlayout_style } from './style';
 
 export function Layout(props) {
@@ -17,7 +18,7 @@ export function Layout(props) {
     ...rest
   } = props;
   const theme = useTheme();
-  const viewport = useMediaQuery(theme.breakpoints.down('md'));
+  const viewport = useMediaQuery(theme.breakpoints.down('xxl'));
   const [openDrawer, setOpenDrawer] = useState(false);
 
   const navItems = [
@@ -25,6 +26,11 @@ export function Layout(props) {
       icon: <DashboardIcon />,
       navItem: 'Home',
       path: '/',
+    },
+    {
+      icon: <NotificationIcon />,
+      navItem: 'Services',
+      path: '/services',
     },
   ];
 
@@ -57,7 +63,7 @@ export function Layout(props) {
           ...bodyStyle,
         }}
       >
-        <Box
+        {/* <Box
           sx={
             viewport
               ? organizationlayout_style.responsiveBoxSx
@@ -65,7 +71,7 @@ export function Layout(props) {
           }
         >
           <SideBar navItems={navItems} />
-        </Box>
+        </Box> */}
 
         {/* Children */}
         <Box

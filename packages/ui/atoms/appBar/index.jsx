@@ -38,7 +38,7 @@ export function AppBar(props) {
         }}
       >
         <Stack direction="row" spacing={1}>
-          <Box pl={1} sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
+          <Box pl={1} sx={{ flexGrow: 1, display: { xs: 'flex' } }}>
             {openDrawer ? (
               <IconButton
                 aria-label="open drawer"
@@ -68,7 +68,7 @@ export function AppBar(props) {
             {/* <CrayondLogo /> */}
             {/* <img src={CrayondLogo} alt="" style={{ height: '40px' }} /> */}
             <Typography variant="h6" color="grey.00">
-              Monorepo Boilerpate - JS
+              Home Service
             </Typography>
           </Box>
         </Stack>
